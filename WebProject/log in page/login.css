@@ -1,0 +1,142 @@
+body {
+    background-color:rgb(211, 181, 245);
+}
+
+.formheader {
+    padding: 0;
+    margin: 13px;
+}
+
+.formheader h2 {
+    margin: 13px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: rgb(125, 128, 129);
+    margin: 15px;
+}
+
+.mainform {
+    background-color: black;
+    color: white;
+    padding: 63px 26px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 21px;
+    width: 357px;
+    border: 2px solid #262424;
+    border-radius: 28px;
+    box-shadow: 5px 5px 5px 5px var(--box-color);
+}
+
+.logininp {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 19px;
+    align-items: center;
+}
+
+.logininp input {
+    padding: 8px;
+    margin: 16px;
+    width: 300px;
+    background-color: rgb(0 0 0);
+    color: white;
+    border: 1px solid white;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    margin-left: 1px;
+}
+
+.logininp button {
+    border-radius: 6px;
+    margin: 10px;
+    width: 140px;
+    height: 34px;
+    background-color: rgb(127, 75, 183);
+    color: white;
+    height: 40px;
+}
+
+.form-label {
+    margin-bottom: -11px;
+}
+
+button:hover {
+    background-color: rgb(255, 254, 254);
+    color: black;
+}
+
+.Register a {
+    text-decoration: none;
+}
+
+.pic-inp {
+    display: flex;
+    flex-direction: row;
+}
+
+.pic-inp img {
+    margin-top: 26px;
+}
+
+@media only screen and (min-width: 768px) {
+    .mainform {
+        width: 450px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .mainform {
+        width: 550px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .mainform {
+        width: 700px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mainform {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .mainform {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .mainform {
+        padding: 40px 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .logininp input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .logininp button {
+        width: 100%;
+    }
+}

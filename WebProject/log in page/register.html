@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- <link rel="stylesheet" href="header2.css"> -->
+</head>
+<body>
+    <div class="mainform">
+        <div class="formheader">
+            <h2 class="h2header">Register / Sign Up</h2>
+            <p class=""></p>
+
+        </div>
+        <div class="logininp">
+            <form class="signup-form"  method=post action=sqldemo2.php>
+                <div class="pic-inp">
+                    <img src="user.png" alt="" style="height: 20px; width: 20px;">
+                    <input type="text" id="name" name="name" placeholder="Name" pattern="[A-Za-z]+" required>
+                </div>
+            <div class="pic-inp">
+                <img src="user.png" alt="" style="height: 20px; width: 20px;">
+            <input type="text" name="username" value="" placeholder="Username"  required
+            minlength="5">
+            </div>
+            <div class="pic-inp">
+                <img src="email.png" alt="" style="height: 20px; width: 20px;">
+            <input type="text"  value="" placeholder="Email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            </div>
+            <div class="pic-inp">
+                <img src="password.png" alt="" style="height: 20px; width: 20px;" >
+            <input type="password"  value="" placeholder="Password" name="password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number
+            and one uppercase and lowercase letter, and at least 8 or more characters"
+            required>
+            </div>
+            <div class="pic-inp">
+                <img src="password.png" alt="" style="height: 20px; width: 20px;">
+             <input type="password"  value="" placeholder="Confirm Password" name="retypePassword"
+             id="" required>
+             </div>
+            <button class="btn btn-primary" aria-required="true">Register</button>
+            </form>
+
+          </div> 
+    </div>
+    <script>
+   
+const f = document.getElementsByClassName("signup-form")[0];
+f.addEventListener("submit", (e) => {
+e.preventDefault();
+const pwd = f.elements["password"].value;
+const rypwd = f.elements["retypePassword"].value;
+const name=f.elements["name"].value;
+const nameRegex = /^[a-zA-Z]+$/;
+if(nameRegex.test(name))
+{
+
+}
+else{
+    alert('Invalid input. Please make sure your name contains only letters.');
+
+}
+if (pwd != rypwd) {
+alert("Password and Retype Password does not match")
+return
+}
+f.submit();
+});
+    </script>
+</body>
+</html>
